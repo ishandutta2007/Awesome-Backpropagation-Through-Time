@@ -10,7 +10,10 @@ Backpropagation Through Time (BPTT) is a hardware-aware optimization and gradien
 The technical implementation of temporal gradient tracking has transitioned from absolute global sequence unrolling to fixed memory slices, moving toward parallelized parallel structures and forward-mode sensitivity checks.
 
 ```mermaid
-[Full BPTT (Werbos, 1990)] ----> [Truncated BPTT (TBPTT)] ----> [Modern Transformers & Parallel Linear Recurrences](Catastrophic Memory Explosion)    (Fixed-Window Memory Bounds)    (SRAM Tiling & Associative Scan Time-Collapsing)
+flowchart LR
+    A["Full BPTT (Werbos, 1990)<br/>(Catastrophic Memory Explosion)"]
+    --> B["Truncated BPTT (TBPTT)<br/>(Fixed-Window Memory Bounds)"]
+    --> C["Modern Transformers & Parallel Linear Recurrences<br/>(SRAM Tiling & Associative Scan Time-Collapsing)"]
 ```
 
 *   **The Full Sequence Unrolling Era (Werbos, 1990)**
