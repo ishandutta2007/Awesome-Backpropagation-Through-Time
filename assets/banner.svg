@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+    
+    <!-- Accent Gradient for Text -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="50%" stop-color="#bc8cff" />
+      <stop offset="100%" stop-color="#ff7b72" />
+    </linearGradient>
+
+    <!-- Node Gradient -->
+    <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bc8cff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.2" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+
+  <!-- Animated-like Neural Graph Lines (Unrolled BPTT) -->
+  <g stroke="#ffffff" stroke-opacity="0.1" stroke-width="2">
+    <!-- Unrolled time steps connections -->
+    <line x1="200" y1="280" x2="350" y2="280" />
+    <line x1="350" y1="280" x2="500" y2="280" />
+    <line x1="500" y1="280" x2="650" y2="280" />
+    <line x1="650" y1="280" x2="800" y2="280" />
+    <line x1="800" y1="280" x2="950" y2="280" />
+
+    <!-- Input to Hidden connections -->
+    <line x1="200" y1="360" x2="200" y2="280" />
+    <line x1="350" y1="360" x2="350" y2="280" />
+    <line x1="500" y1="360" x2="500" y2="280" />
+    <line x1="650" y1="360" x2="650" y2="280" />
+    <line x1="800" y1="360" x2="800" y2="280" />
+    <line x1="950" y1="360" x2="950" y2="280" />
+
+    <!-- Hidden to Output connections -->
+    <line x1="200" y1="280" x2="200" y2="200" />
+    <line x1="350" y1="280" x2="350" y2="200" />
+    <line x1="500" y1="280" x2="500" y2="200" />
+    <line x1="650" y1="280" x2="650" y2="200" />
+    <line x1="800" y1="280" x2="800" y2="200" />
+    <line x1="950" y1="280" x2="950" y2="200" />
+
+    <!-- Backpropagation Backward Arrows -->
+    <path d="M 330 260 L 220 260" stroke="#ff7b72" stroke-width="3" marker-end="url(#arrow)" />
+    <path d="M 480 260 L 370 260" stroke="#ff7b72" stroke-width="3" />
+    <path d="M 630 260 L 520 260" stroke="#ff7b72" stroke-width="3" />
+    <path d="M 780 260 L 670 260" stroke="#ff7b72" stroke-width="3" />
+    <path d="M 930 260 L 820 260" stroke="#ff7b72" stroke-width="3" />
+  </g>
+
+  <!-- Glowing Nodes -->
+  <!-- Hidden Layer -->
+  <circle cx="200" cy="280" r="15" fill="url(#nodeGrad)" />
+  <circle cx="350" cy="280" r="15" fill="url(#nodeGrad)" />
+  <circle cx="500" cy="280" r="15" fill="url(#nodeGrad)" />
+  <circle cx="650" cy="280" r="15" fill="url(#nodeGrad)" />
+  <circle cx="800" cy="280" r="15" fill="url(#nodeGrad)" />
+  <circle cx="950" cy="280" r="15" fill="url(#nodeGrad)" />
+
+  <!-- Inputs -->
+  <circle cx="200" cy="360" r="8" fill="#58a6ff" />
+  <circle cx="350" cy="360" r="8" fill="#58a6ff" />
+  <circle cx="500" cy="360" r="8" fill="#58a6ff" />
+  <circle cx="650" cy="360" r="8" fill="#58a6ff" />
+  <circle cx="800" cy="360" r="8" fill="#58a6ff" />
+  <circle cx="950" cy="360" r="8" fill="#58a6ff" />
+
+  <!-- Outputs -->
+  <circle cx="200" cy="200" r="8" fill="#ff7b72" />
+  <circle cx="350" cy="200" r="8" fill="#ff7b72" />
+  <circle cx="500" cy="200" r="8" fill="#ff7b72" />
+  <circle cx="650" cy="200" r="8" fill="#ff7b72" />
+  <circle cx="800" cy="200" r="8" fill="#ff7b72" />
+  <circle cx="950" cy="200" r="8" fill="#ff7b72" />
+
+  <!-- Title & Subtitle -->
+  <text x="600" y="90" text-anchor="middle" font-family="'Outfit', 'Inter', sans-serif" font-size="46" font-weight="900" fill="url(#textGrad)">
+    Awesome Backpropagation Through Time
+  </text>
+  
+  <text x="600" y="140" text-anchor="middle" font-family="'Inter', sans-serif" font-size="20" font-weight="400" fill="#8b949e" letter-spacing="1.5">
+    Evolution, Variants, &amp; Hardware-Aware Neural Gradients
+  </text>
+</svg>
