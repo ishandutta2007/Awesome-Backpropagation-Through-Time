@@ -84,4 +84,19 @@ While BPTT provides elegant mathematical tracking over sequence histories, its s
 | [**High-Frequency Continuous Time-Series & Telemetry Prediction**](./details/time_series_prediction.md) | **Application:** Monitors high-volume, real-time industrial streaming arrays (such as seismic activity logs, multi-axis aerospace telemetry, or cardiac ICU patient tracking). BPTT-optimized LSTMs ingest unevenly spaced continuous data vectors, predicting failure states precisely. | 1997 | [Hochreiter & Schmidhuber (1997)](https://doi.org/10.1162/neco.1997.9.8.1735) |
 | [**Neuromorphic Event-Based Computer Vision Tracking**](./details/event_vision.md) | **Application:** Processes continuous, asynchronous data streams from Event-Based Cameras (Dynamic Vision Sensors). Deep Spiking Neural Networks are trained via surrogate-gradient BPTT to track high-speed moving targets (such as autonomous drone collision-avoidance arrays) with microsecond temporal precision. | 2019 | [Neftci et al. (2019)](https://arxiv.org/abs/1901.09948) |
 
+---
+
+## ⭐️ Star History
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Backpropagation-Through-Time&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Backpropagation-Through-Time&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Backpropagation-Through-Time&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Backpropagation-Through-Time&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+
 
